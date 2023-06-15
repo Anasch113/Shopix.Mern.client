@@ -1,0 +1,284 @@
+@import "../../css-config/mixins.scss";
+
+
+ .main-container {
+    position: relative;
+    // padding: 40px 0px;
+    height: 211px;
+    width: 100%;
+    @include md{
+
+        width: 1519px;
+        height: 644px;
+    }
+
+
+background: #F6F6F6;
+.left-container{
+    position: absolute;
+    background:linear-gradient(to right, #8e2de2, #4a00e0);
+    width: 166px;
+    height: 210px;
+    left: 0px;
+    top: 0px;
+@include md{
+    width: 760px;
+    height: 643px;
+}
+ .white-container{
+
+
+    position: absolute;
+    width: 129px;
+    height: 132px;
+    left: 37px;
+    top: 56px;
+        
+        background: rgba(255, 255, 255, 0.4);
+        
+        backdrop-filter: blur(2px);
+        /* Note: backdrop-filter has minimal browser support */
+        
+        border-radius: 40px 0px 0px 40px;
+       
+        background:  url("../../assets/products/loginbg.svg");
+        
+        
+border-radius: 40px 0px 0px 40px;
+backdrop-filter: blur(2px);
+.bg-image{
+    background: url("../../assets/products/loginbg.svg");
+   
+}
+
+    @include md{
+        width: 462px;
+    height: 456px;
+    left: 298px;
+    top: 87px;
+
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      padding: 20px;
+        gap: 0px;
+        width: 147px;
+       height: 80px;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        @include md{
+            gap: 34px;
+            width: 567px;
+            height: 170px;
+            padding: 85px;
+        }
+   
+        .title{
+            
+         
+            
+            font-style: normal;
+            font-weight: 700;
+           
+            // line-height: 30%;
+            /* identical to box height, or 58px */
+            
+            
+            color: #5037ff;;
+            // -webkit-background-clip: text;
+          
+            background-clip: text;
+         
+            
+            font-size:10px ;
+            /* Inside auto layout */
+            
+          
+            // order: 0;
+            // flex-grow: 0;
+            @include md{
+                font-size: 53px;
+                font-weight: 800;
+            }
+    
+        }
+        .desc{
+            color: #111827;
+            // font-family: 'Poppins';
+font-style: normal;
+font-size: 10px;
+font-weight: 800;
+@include md{
+    font-size: 11px;
+    width: 333px;
+}
+        }
+       
+    }
+ }
+
+}
+
+
+.right-container{
+    position: absolute;
+width: 535px;
+height: 560px;
+left: -203px;
+top: 209px;
+@include md{
+    left: 972px;
+    width: 535px;
+height: 560px;
+top: 209px;
+}
+
+
+.upper-heading{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 7px;
+
+position: absolute;
+width: 178px;
+height: 61px;
+left: 354px;
+top: -213px;
+@include md{
+    width: 209px;
+    gap: 15px;
+
+height: 61px;
+left: -141px;
+    top: -104px;
+    padding: 16px;
+}
+.welcome{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    width: 304px;
+    font-size: 13px;
+    @include md{
+        font-size: 20px;
+    width: 304px;
+    }
+}
+
+.below-welcome{
+    
+font-style: normal;
+font-weight: 600;
+font-size: 9;
+color: grey;
+width: 304px;
+@include md{
+    font-size: 28px;
+    width: 351px;
+    color: #5b5555;
+}
+}
+}
+
+.email-section{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 160px;
+height: 27px;
+left: 370px;
+    top: -144px;
+@include md{
+    width: 209px;
+    height: 61px;
+    left: -125px;
+    top: 3px;
+        padding: 16px;
+}
+.email-text{
+    color: #111827;
+    width: 50px;
+height: 3px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+display: flex;
+align-items: center;
+@include md{
+    font-size: 18px;
+    width: 50px;
+    height: 22px;
+} 
+}
+.email-input{
+    border: 1px solid #9CA3AF;
+border-radius: 11px;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 13px 16px;
+gap: 10px;
+
+width: 174px;
+height: 9px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+@include md{
+    width: 535px;
+    height: 48px; 
+    border-radius: 11px;
+}
+}
+}
+.btn{
+    position: absolute;
+    width: 134px;
+    height: 45px;
+    left: 382px;
+
+    top: -51px;
+
+background: #0030AB;
+border-radius: 40px;
+@include md{
+    width: 465px;
+height: 48px;
+left: -57px;
+    top: 284px;
+}
+}
+.btn p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+/* BG */
+
+color: #F8FAFC;
+}
+}
+
+
+
+};

@@ -1,0 +1,351 @@
+@import "../../css-config/mixins.scss";
+
+.smain-container {
+    position: relative;
+    // padding: 40px 0px;
+    height: 211px;
+    width: 100%;
+    background: #F6F6F6;
+    @include md{
+
+        width: 1519px;
+        height: 644px;
+    }
+    .sleft-container{
+        position: absolute;
+        background:linear-gradient(to right, #8e2de2, #4a00e0);
+        width: 166px;
+        height: 210px;
+        left: 0px;
+        top: 0px;
+    @include md{
+        width: 760px;
+        height: 643px;
+    } .swhite-container{
+
+
+      
+
+            position: absolute;
+            width: 129px;
+            height: 132px;
+            left: 37px;
+            top: 56px;
+                
+                background: rgba(255, 255, 255, 0.4);
+                
+                backdrop-filter: blur(2px);
+                /* Note: backdrop-filter has minimal browser support */
+                // linear-gradient(0deg,rgba(118, 118, 118, 0.3), rgba(118, 118, 118, 0.3)),
+                border-radius: 40px 0px 0px 40px;
+              
+               
+                background-image:   linear-gradient(0deg,rgba(118, 118, 118, 0.3), rgba(118, 118, 118, 0.3)), url("../../assets/products/bg6.png");
+                background-color: #625c5c; /* Replace with the desired background color */
+                background-blend-mode: overlay;
+                background-repeat: no-repeat;
+
+                background-position: 113px 0px;
+               
+               
+  
+    
+    
+    
+    
+    
+                
+                
+        border-radius: 40px 0px 0px 40px;
+        backdrop-filter: blur(2px);
+        @include md{
+            width: 643px;
+            background-color: #452473; /* Replace with the desired background color */
+            background-blend-mode: overlay;
+            background-position: 0px 0px;
+            height: 593px;
+            left: 117px;
+            top: 0px;
+        
+        }
+        
+
+    
+
+    .scontent{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        filter: none;
+      padding: 20px;
+        gap: 0px;
+        filter: none;
+        width: 147px;
+       height: 80px;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        @include md{
+            filter: none;
+            gap: 34px;
+            width: 567px;
+            height: 170px;
+            padding: 85px;
+        }
+   
+        .stitle{
+            filter: none;
+         
+            
+            font-style: normal;
+            font-weight: 700;
+           
+            // line-height: 30%;
+            /* identical to box height, or 58px */
+            
+            
+            color: wheat;
+            // -webkit-background-clip: text;
+          
+            background-clip: text;
+         
+         
+            font-size:10px ;
+            /* Inside auto layout */
+            
+          
+            // order: 0;
+            // flex-grow: 0;
+            @include md{
+                font-size: 53px;
+                font-weight: 800;
+                filter: none;
+            }
+    
+        }
+        .sdesc{
+            color: wheat;
+            // font-family: 'Poppins';
+font-style: normal;
+filter: none;
+font-size: 10px;
+font-weight: 800;
+@include md{
+    width: 275px;
+    font-size: 14px;
+    filter: none;
+}
+        }
+        .sdesc-t{
+            color: wheat
+        }
+       
+    }
+    }
+    
+
+}
+.sright-container{
+    position: absolute;
+width: 535px;
+height: 560px;
+left: -203px;
+top: 209px;
+@include md{
+    left: 972px;
+    width: 535px;
+height: 560px;
+top: 209px;
+}
+
+
+.supper-heading{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 7px;
+
+position: absolute;
+width: 178px;
+height: 61px;
+left: 354px;
+top: -213px;
+@include md{
+    width: 209px;
+    gap: 15px;
+
+height: 61px;
+left: -141px;
+    top: -201px;
+    padding: 16px;
+}
+.swelcome{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    width: 304px;
+    font-size: 13px;
+    @include md{
+        font-size: 20px;
+    width: 304px;
+    }
+}
+
+.sbelow-welcome{
+    
+font-style: normal;
+font-weight: 600;
+font-size: 9;
+color: grey;
+width: 304px;
+@include md{
+    font-size: 26px;
+    width: 338px;
+    color: #5b5555;
+}
+}
+}
+
+.semail-section{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 160px;
+height: 27px;
+left: 370px;
+    top: -144px;
+@include md{
+    width: 209px;
+    height: 61px;
+    left: -125px;
+    top: -94px;
+    gap: 12px;
+
+        padding: 16px;
+}
+.small-inputs{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+.si-text{
+    color: #111827;
+    width: 50px;
+height: 3px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+display: flex;
+align-items: center;
+@include md{
+    font-size: 18px;
+    width: 30px;
+    height: 17px;
+} 
+}
+.small-email-input{
+    border: 1px solid #9CA3AF;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 16px;
+    gap: 10px;
+    
+    width: 174px;
+    height: 9px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    @include md{
+        width: 200px;
+        height: 48px; 
+        border-radius: 11px;
+    }
+}
+}
+.semail-text{
+    color: #111827;
+    width: 50px;
+height: 3px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+display: flex;
+align-items: center;
+@include md{
+    font-size: 18px;
+    width: 165px;
+    height: 22px;
+} 
+}
+.semail-input{
+    border: 1px solid #9CA3AF;
+border-radius: 11px;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 13px 16px;
+gap: 10px;
+
+width: 174px;
+height: 9px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+@include md{
+    width: 535px;
+    height: 48px; 
+    border-radius: 11px;
+}
+}
+}
+.sbtn{
+    position: absolute;
+    width: 134px;
+    height: 45px;
+    left: 382px;
+display: flex;
+    top: -51px;
+    align-items: center;
+justify-content: center;
+background: #0030AB;
+border-radius: 40px;
+@include md{
+    width: 328px;
+    height: 48px;
+    left: -4px;
+top: 384px;
+}
+}
+.sbtn p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+margin-top: 11px;
+
+/* BG */
+
+color: #F8FAFC;
+}
+}
+
+}
